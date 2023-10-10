@@ -1,0 +1,28 @@
+.accueil {
+  width: 85%;
+  margin: auto;
+  .card-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: auto;
+    padding: 21px 20px 21px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .accueil {
+    width: 92%;
+    .banniere-accueil {
+      height: 111px;
+      margin: 20px auto 10px auto;
+      border-radius: 10px;
+    }
+    .card-list {
+      background-color: #ffffff;
+      padding: 0px;
+    }
+  }
+}
