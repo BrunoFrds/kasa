@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../Assets/fonts/Montserrat-Medium.otf");
+  src: url("../Assets/Font/Montserrat-Medium.otf");
 }
 
 $fontRegular: "Montserrat", sans-serif;
@@ -12,9 +12,9 @@ $fontRegular: "Montserrat", sans-serif;
 }
 
 body {
+  width: 100%;
+  height: 100vh;
   font-family: $fontRegular;
-  background-color: $colorBackground;
-  color: $white;
 }
 
 ul {

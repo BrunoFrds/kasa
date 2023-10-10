@@ -1,5 +1,5 @@
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./Styles/styles.scss";
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
 import Accueil from "./Pages/Accueil";
@@ -7,7 +7,7 @@ import APropos from "./Pages/APropos";
 import Fiche from "./Pages/Fiche";
 import Error from "./Pages/404";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Header />
@@ -20,6 +20,6 @@ function App() {
       <Footer />
     </BrowserRouter>
   );
-}
+};
 
 export default App;
