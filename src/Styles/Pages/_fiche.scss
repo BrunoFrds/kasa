@@ -1,0 +1,107 @@
+.fiche {
+  width: 85%;
+  margin: auto;
+  .info-logement {
+    position: relative;
+    .title-fiche {
+      margin: auto;
+      .title-logement {
+        color: #ff6060;
+        font-size: 36px;
+        line-height: 51px;
+      }
+
+      .location-logement {
+        color: #ff6060;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    .tags-logement {
+      display: flex;
+    }
+    .host-logement {
+      position: absolute;
+      top: 0px;
+      right: 80px;
+      .img-host-logement {
+        position: absolute;
+        left: 0px;
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+        margin-left: 10px;
+      }
+      .name-host-logement {
+        position: absolute;
+        right: 0px;
+        color: #ff6060;
+        font-size: 18px;
+        line-height: 26px;
+        width: 93px;
+        text-align: right;
+      }
+    }
+    .note-logement {
+      position: absolute;
+      top: 115px;
+      right: 0px;
+    }
+    .collapse-fiche {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      list-style: none;
+      &.collapse {
+        width: 47%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fiche {
+    width: 92%;
+    .title-logement {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .location-logement {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .host-logement {
+      position: absolute;
+      top: 115px;
+      right: 50px;
+      .img-host-logement {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+      }
+      .name-host-logement {
+        position: absolute;
+        top: -10px;
+        font-size: 12px;
+        line-height: 17px;
+        width: 60px;
+      }
+    }
+    .note-logement {
+      position: absolute;
+      top: 125px;
+      left: 0px;
+      &img {
+        width: 15px;
+      }
+    }
+    .collapse-fiche {
+      display: flex;
+      flex-direction: column;
+      margin: 40px auto 0px auto;
+      &.collapse {
+        width: 100%;
+      }
+    }
+  }
+}
