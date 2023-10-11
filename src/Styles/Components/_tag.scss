@@ -1,0 +1,23 @@
+.tag-name {
+  color: #ffffff;
+  background-color: #ff6060;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  width: 115px;
+  height: 25px;
+  margin: 20px 10px 24px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  .tag-name {
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 19px;
+    text-align: center;
+    width: 84px;
+    height: 18px;
+    margin: 10px 10px 24px 0px;
+  }
+}

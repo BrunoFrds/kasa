@@ -7,10 +7,10 @@
       margin: auto;
       .title-logement {
         color: #ff6060;
+        width: 80%;
         font-size: 36px;
         line-height: 51px;
       }
-
       .location-logement {
         color: #ff6060;
         font-size: 18px;
@@ -50,10 +50,11 @@
     .collapse-fiche {
       display: flex;
       justify-content: space-between;
-      margin: auto;
+      margin: 20px 0px 0px 0px;
       list-style: none;
-      &.collapse {
+      .collapse {
         width: 47%;
+        height: auto;
       }
     }
   }
@@ -62,45 +63,49 @@
 @media screen and (max-width: 400px) {
   .fiche {
     width: 92%;
-    .title-logement {
-      font-size: 18px;
-      line-height: 26px;
-    }
-    .location-logement {
-      font-size: 14px;
-      line-height: 20px;
-    }
-    .host-logement {
-      position: absolute;
-      top: 115px;
-      right: 50px;
-      .img-host-logement {
-        width: 32px;
-        height: 32px;
-        border-radius: 16px;
+    .info-logement {
+      .title-fiche {
+        .title-logement {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        .location-logement {
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
-      .name-host-logement {
+      .host-logement {
         position: absolute;
-        top: -10px;
-        font-size: 12px;
-        line-height: 17px;
-        width: 60px;
+        top: 115px;
+        right: 50px;
+        .img-host-logement {
+          width: 32px;
+          height: 32px;
+          border-radius: 16px;
+        }
+        .name-host-logement {
+          position: absolute;
+          top: -10px;
+          font-size: 12px;
+          line-height: 17px;
+          width: 60px;
+        }
       }
-    }
-    .note-logement {
-      position: absolute;
-      top: 125px;
-      left: 0px;
-      &img {
-        width: 15px;
+      .note-logement {
+        position: absolute;
+        top: 125px;
+        left: 0px;
+        &img {
+          width: 15px;
+        }
       }
-    }
-    .collapse-fiche {
-      display: flex;
-      flex-direction: column;
-      margin: 40px auto 0px auto;
-      &.collapse {
-        width: 100%;
+      .collapse-fiche {
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto 0px auto;
+        &.collapse {
+          width: 100%;
+        }
       }
     }
   }
